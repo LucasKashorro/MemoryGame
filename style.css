@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    transition: 0.1s
+}
+
+body {
+    background-image: linear-gradient( 0deg,  rgba(26,33,64,1) 10.9%, rgba(81,84,115,1) 87.1% );
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+a {
+    background: rgb(25,23,33);
+    background: linear-gradient(90deg, rgba(25,23,33,1) 0%, rgba(8,9,24,1) 79%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 230px;
+    height: 55px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 20px 5px rgba(0,0,0,0.3);
+    gap: 5px;
+    text-decoration: none;
+}
+
+a img {
+    width: 50px;
+}
+
+a p {
+    color: white;
+}
+
+#main-content {
+    background: rgb(25,23,33);
+    background: linear-gradient(90deg, rgba(25,23,33,1) 0%, rgba(8,9,24,1) 79%);
+    height: 850px;
+    width: 800px;
+    padding: 20px 10px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 20px 5px rgba(0,0,0,0.3);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px 10px;
+}
+
+#main-content button {
+    width: 180px;
+    height: 200px;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#main-content .btn {
+    background-color: #151e24;
+    border: 1px solid #0c1318;
+    color: white;
+}
+
+#main-content .btn:hover {
+    cursor: pointer;
+    background-color: #222c33;
+}
+
+.used {
+    background-color: rgb(40, 158, 40);
+    border: none;
+    
+}
+
+#win-modal {
+    position: absolute;
+    z-index: 1;
+    background-color: rgb(21, 19, 27);
+    padding: 10;
+    width: 350px;
+    height: 200px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 3px 3px 20px 5px rgba(0,0,0,0.3);
+}
+
+#win-modal h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+}
+
+#win-modal button {
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid #0c1318;
+    border-radius: 5px;
+    color: white;
+    background-color: #23323b
+    
+}
+
+#win-modal button:hover {
+    cursor: pointer;
+    background-color: #31424d
+}
+
+#modal-background {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
+}
